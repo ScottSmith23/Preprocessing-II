@@ -11,6 +11,7 @@
 }
 
 .custom-btn(){
+	font-weight:bold;
 	display: block;
 	background-color:rgb(23, 133, 114);
 	margin: 0 10px 20px;
@@ -20,4 +21,18 @@
 	font-size: 2rem;
 	border-radius: 10px;
 	color:white;
+	padding-top:10px;
+	padding-bottom:10px;
   }
+
+  .keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
