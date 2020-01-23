@@ -1,3 +1,5 @@
+@import "variables";
+@import "mixins";
 .home {
 
   .content-section {
@@ -58,4 +60,15 @@
       margin-bottom: 30px;
     }
   }
+#welcome-header{
+  .header-content{
+    margin-top:3%;
+    border-bottom: 2px dashed @navigation-border;
+  }
+}
+.btn{
+  .custom-btn();
+  margin-left: auto;
+  margin-right: auto;
+}
 }// home

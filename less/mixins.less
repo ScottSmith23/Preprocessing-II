@@ -1,1 +1,23 @@
 // Mixins in here
+
+//mixins
+.center(){ //we want the parethesis because we want this mixin to be consumed by the compiler
+	display:flex;
+	justify-content:center;
+  }
+.supersize(){
+	font-size:30px;
+    font-weight: bold;
+}
+
+.custom-btn(){
+	display: block;
+	background-color:rgb(23, 133, 114);
+	margin: 0 10px 20px;
+	cursor: pointer;
+	width: 200px;
+	height: 45px;
+	font-size: 2rem;
+	border-radius: 10px;
+	color:white;
+  }

@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'ZCOOL QingKe HuangYou';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('ZCOOL QingKe HuangYou Regular'), local('ZCOOLQingKeHuangYou-Regular'), url(https://fonts.gstatic.com/s/zcoolqingkehuangyou/v5/2Eb5L_R5IXJEWhD3AOhSvFC554MOOahI4mR4jPe4.ttf) format('truetype');
+}
+.home .content-section {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home .content-section .text-content {
+  width: 48%;
+  padding-right: 1%;
+}
+.home .content-section .img-content {
+  width: 48%;
+  padding-left: 1%;
+}
+.home .content-section .img-content img {
+  border-radius: 10px;
+}
+.home .inverse-content {
+  padding-bottom: 30px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .inverse-content .text-content {
+  padding-left: 1%;
+  padding-right: 0;
+}
+.home .inverse-content .img-content {
+  padding-right: 1%;
+  padding-left: 0;
+}
+.home .content-destination {
+  width: 75%;
+  margin: 0 auto 30px;
+}
+.home .content-destination img {
+  border-radius: 10px;
+}
+.home .content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+.home .content-pick .destination {
+  width: 30%;
+  margin-bottom: 30px;
+}
+.home #welcome-header .header-content {
+  margin-top: 3%;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .btn {
+  display: block;
+  background-color: #178572;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
