@@ -85,11 +85,11 @@
   margin-right: auto;
 }
 .home .btn:hover {
-  -webkit-animation: fade-in 0.2s linear infinite alternate;
-  -moz-animation: fade-in 0.2s linear infinite alternate;
-  animation: fade-in 0.2s linear infinite alternate;
+  -webkit-animation: hello 0.2s linear infinite alternate;
+  -moz-animation: hello 0.2s linear infinite alternate;
+  animation: hello 0.2s linear infinite alternate;
 }
-@-moz-keyframes fade-in {
+@-moz-keyframes hello {
   0% {
     opacity: 0;
   }
@@ -97,7 +97,7 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes fade-in {
+@-webkit-keyframes hello {
   0% {
     opacity: 0;
   }
@@ -105,7 +105,7 @@
     opacity: 1;
   }
 }
-@keyframes fade-in {
+@keyframes hello {
   0% {
     opacity: 0;
   }
