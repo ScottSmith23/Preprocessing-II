@@ -14,10 +14,11 @@
       width: 48%;
       padding-right: 1%;
     }
-
+   
     .img-content {
       width: 48%;
       padding-left: 1%;
+    
 
       img {
         border-radius: 10px;
@@ -65,11 +66,16 @@
     margin-top:3%;
     border-bottom: 2px dashed @navigation-border;
   }
+  .img-bus{
+    display:flex;
+    justify-content: center;
+    .margincenter();
+
+  }
 }
 .btn{
   .custom-btn();
-  margin-left: auto;
-  margin-right: auto;
+  .margincenter();
   &:hover{
     .keyframes(fade-in;{
       0% { opacity: 0; }
@@ -79,9 +85,6 @@
     }
     &:active{
       background-color: red;
-      .form-popup{
-        display: initial;
-      }
     }
   }
 
@@ -144,8 +147,36 @@
     .destination {
       width: 90%;
       margin-bottom: 30px;
-      margin-left:auto;
-      margin-right: auto;
+      .margincenter();
+    }
+  }
+  .btn{
+    .custom-btn();
+    width:100%;
+    background-color:rgb(68, 186, 216);
+  }
+}
+@media @tablet{
+  .content-destination {
+    width: 100%;
+    margin: 0 auto 30px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  .content-pick {
+    padding-top: 30px;
+    border-top: 2px dashed @navigation-border;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: column;
+
+    .destination {
+      width: 90%;
+      margin-bottom: 30px;
+      .margincenter();
     }
   }
   .btn{
@@ -157,8 +188,9 @@
 //popup form
 .form-popup{
   width: 100%;
-  display: none;
+  display: flex;
   justify-content: center;
+  .margincenter();
   h1{
     display: flex;
     justify-content: center;
@@ -169,4 +201,5 @@
   }
 }
 }
+
 // home

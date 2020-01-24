@@ -305,6 +305,12 @@ img {
   margin-top: 3%;
   border-bottom: 2px dashed #C0C0C0;
 }
+.home #welcome-header .img-bus {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 .home .btn {
   font-weight: bold;
   display: block;
@@ -352,9 +358,6 @@ img {
 }
 .home .btn:active {
   background-color: red;
-}
-.home .btn:active .form-popup {
-  display: initial;
 }
 @media ( max-width: 500px ) {
   .home .content-section {
@@ -425,10 +428,50 @@ img {
     background-color: #44bad8;
   }
 }
+@media ( max-width: 800px ) {
+  .home .content-destination {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+  .home .content-destination img {
+    border-radius: 10px;
+  }
+  .home .content-pick {
+    padding-top: 30px;
+    border-top: 2px dashed #C0C0C0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: column;
+  }
+  .home .content-pick .destination {
+    width: 90%;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home .btn {
+    font-weight: bold;
+    display: block;
+    background-color: #178572;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #44bad8;
+  }
+}
 .home .form-popup {
   width: 100%;
-  display: none;
+  display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .home .form-popup h1 {
   display: flex;
