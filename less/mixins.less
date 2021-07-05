@@ -1,1 +1,42 @@
 // Mixins in here
+
+//mixins
+.center(){ //we want the parethesis because we want this mixin to be consumed by the compiler
+	display:flex;
+	justify-content:center;
+  }
+ .margincenter(){
+	margin-left:auto;
+    margin-right:auto;
+ } 
+.supersize(){
+	font-size:30px;
+    font-weight: bold;
+}
+
+.custom-btn(@color:rgb(23, 133, 114),@width:200px,@text-color:white){
+	font-weight:bold;
+	display: block;
+	background-color:@color;
+	margin: 0 10px 20px;
+	cursor: pointer;
+	width: @width;
+	height: 45px;
+	font-size: 2rem;
+	border-radius: 10px;
+	color:@text-color;
+	padding-top:10px;
+	padding-bottom:10px;
+  }
+
+  .keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
